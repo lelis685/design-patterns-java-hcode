@@ -1,5 +1,6 @@
 package br.com.designpatterns.demo;
 
+import br.com.designpatterns.demo.factorymethod.BikeTransport;
 import br.com.designpatterns.demo.factorymethod.CarTransport;
 import br.com.designpatterns.demo.factorymethod.MotorcycleTransport;
 import br.com.designpatterns.demo.factorymethod.Transport;
@@ -26,6 +27,7 @@ public class FactoryMethodMain {
         switch (type){
             case "uber" -> transport = new CarTransport();
             case "log" -> transport = new MotorcycleTransport();
+            case "eats" -> transport = new BikeTransport();
             default -> System.out.println("Selecione o tipo de entrega");
         }
     }

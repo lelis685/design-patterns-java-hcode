@@ -7,7 +7,7 @@ import br.com.designpatterns.demo.abstractfactory.boats.IBoat;
 import br.com.designpatterns.demo.abstractfactory.landvehicles.Car;
 import br.com.designpatterns.demo.abstractfactory.landvehicles.ILandVehicle;
 
-public class UberTransport implements ITransportFactory{
+public class BoatTransport implements ITransportFactory{
     @Override
     public ILandVehicle createTransportVehicle() {
         return new Car();
